@@ -33,26 +33,27 @@ function setUserInputList(){
 }
 
 
-
+// setSecondContent() setzt die zweite Liste
 function setSecondListContent() {
     let secondListDiv = document.getElementById("secondListe");
     let content = createHTMLList(second_list);
     secondListDiv.innerHTML = content
 }
 
+// createHTMLInput() liest das zweite Eingabefeld aus und fügt ein einzelnes Element hinzu.
 function createHTMLInput() {
     let secondInput = document.getElementById("secondInput");
-    let text = secondInput.value.trim();
+    let text = secondInput.value.trim(); // entfernt Leerzeichen
 
 
     if (text !== "") {
-        second_list.push(text);
+        second_list.push(text);  // Nur ein einzelnes Leerzeichen hinzufügen.
         setSecondListContent();
-        secondInput.value = "";
+        secondInput.value = "";  // Eingabefeld leeren
 
     }
 }
-
+// Event-Listener, um die Eingabe mit Enter zu bestätigen.
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("userInput").addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
