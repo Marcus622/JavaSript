@@ -1,5 +1,6 @@
 // my_list soll auf der Website dargestellt werden
 let my_list = []
+let second_list = []
 
 // createHTMLList nimmt ein Javascript Array und gibt einen String für eine
 // ungeordnete HTML Liste zurück
@@ -31,10 +32,37 @@ function setUserInputList(){
     setListContent()
 }
 
-let second_list = []
 
-function createHTMlInput(liste1) {
-    let second_input = document.getElementById("secondInput")
-    
+
+function setSecondListContent() {
+    let secondListDiv = document.getElementById("secondListe");
+    let content = createHTMLList(second_list);
+    secondListDiv.innerHTML = content
 }
 
+function createHTMLInput() {
+    let secondInput = document.getElementById("secondInput");
+    let text = secondInput.value.trim();
+
+
+    if (text !== "") {
+        second_list.push(text);
+        setSecondListContent();
+        secondInput.value = "";
+
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("userInput").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            setUserInputList();
+        }
+    });
+
+    document.getElementById("secondInput").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            createHTMLInput();
+        }
+    });
+});
