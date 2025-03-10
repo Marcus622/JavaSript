@@ -35,11 +35,14 @@ function setUserInputList(){
 
 // setSecondContent() setzt die zweite Liste
 function setSecondListContent() {
-    let secondListDiv = document.getElementById("secondListe");
-    let content = createHTMLList(second_list);
-    secondListDiv.innerHTML = content
-}
-
+    let secondListDiv = document.getElementById("secondListe"); // sucht nach einem HTML-Element mit der id="secondListe"
+     // document.getElementById("secondListe") gibt das HTML-Element als Referenz zurück.
+     // Das Ergebnis wird in der Variablen secondListDiv gespeichert.
+     let content = createHTMLList(second_list); // createHTMLList(second_list) wird aufgerufen, um eine HTML-Liste 
+     // aus dem Array second_list zu erstellen. Das Ergebnis (eine "<ul>...</ul>"-Liste als String) wird in content gespeichert.
+     secondListDiv.innerHTML = content // Der HTML-Code von content (<ul>...</ul>) wird in secondListDiv.innerHTML eingefügt.
+    } // Das bedeutet, dass das <div id="secondListe">-Element nun die generierte Liste enthält.
+    
 // createHTMLInput() liest das zweite Eingabefeld aus und fügt ein einzelnes Element hinzu.
 function createHTMLInput() {
     let secondInput = document.getElementById("secondInput");
