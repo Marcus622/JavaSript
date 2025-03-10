@@ -9,17 +9,17 @@
 // zugewiesen werden kann.
 
 
-// .concat() Methode
+//.concat() Methode
 
-// const arr1 = ["Cecilie", "Lone"];
-// const arr2 = ["Jerry", "Mikel", "Susi"];
-// const arr3 = ["Lucy"];
-// const arr4 = ["Basine", "Mot"]; // Es werden vier arrays erstellt. Jedes enthält eine Liste von Namen als Strings.
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Jerry", "Mikel", "Susi"];
+const arr3 = ["Lucy"];
+const arr4 = ["Basine", "Mot"]; // Es werden vier arrays erstellt. Jedes enthält eine Liste von Namen als Strings.
 
-// const children = arr1.concat(arr2, arr3, arr4); // Die concat()-Methode kobiniert arr1, arr2, arr3 und arr4 zu einem
-// // neuen array, wobei arr1 unverändert bleibt, da concat() eine Kopie erstellt.
+const children = arr1.concat(arr2, arr3, arr4); // Die concat()-Methode kobiniert arr1, arr2, arr3 und arr4 zu einem
+// neuen array, wobei arr1 unverändert bleibt, da concat() eine Kopie erstellt.
 
-// console.log(children) // Gibt das neue kombinierte Array in der Konsole aus.
+console.log(children) // Gibt das neue kombinierte Array in der Konsole aus.
 
 
 
@@ -39,18 +39,23 @@
 
 
 
+
 // .findIndex()
 // Die Methode .findIndex() sucht in einem Array nach dem Index, des ersten Elementes, das eine bestimmte Bedingung 
 // erfüllt. Sie gibt den Index (Position) der ersten passenden Elements zurück. Gibt -1 zurück, wenn keines gefunden
 // wird. Ähnlich wie bei .find(). aber anstatt des Wertes wird der Index zurückgegeben.
 
-const ages = [3, 10, 18, 20, 27]
+// const ages = [3, 10, 18, 20, 27]
+
+// function checkAge(age) {     // function nimmt Zahl age als Eingabe und ist ein Filterkriterium für .findIndex().
+//     return age > 20          // gibt true zurück, wenn age > 20, sonst false.
+// }
+// const result = ages.findIndex(checkAge);  // Durchläuft jedes Element im ages-Array und prüft es mit checkAge.
+// // Gibt den Index des ersten Elementes zurück, das die Bedingung age > 20 erfüllt.
+
+// console.log(result) // Gibt den Index 4 in der Konsole aus.
 
 
-function checkAge(age) {     // function nimmt Zahl age als Eingabe und ist ein Filterkriterium für .findIndex().
-    return age > 20          // gibt true zurück, wenn age > 20, sonst false.
-}
-const result = ages.findIndex(checkAge);  // Durchläuft jedes Element im ages-Array und prüft es mit checkAge.
-// Gibt den Index des ersten Elementes zurück, das die Bedingung age > 20 erfüllt.
 
-console.log(result) // Gibt den Index 4 in der Konsole aus.
+// findLastIndex
+
