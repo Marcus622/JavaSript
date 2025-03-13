@@ -1,0 +1,10 @@
+
+h1 {
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    border: solid 5px black;
+
+
+}
