@@ -1,0 +1,68 @@
+
+h1 {
+    color: darkred;
+}
+
+p {
+    font-size: 30px;
+}
+
+#Haupttitel {
+    font-weight: bold;
+}
+
+.hervorgehoben, markiert {
+    color: red
+}
+
+.inhalt h2 {
+    text-decoration: underline;
+}
+
+input:focus {
+    background-color: black;
+    color: white;
+    
+}
+
+button:hover {
+background-color: green;
+color: beige;
+}
+
+ul li:first-child {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ul :nth-child(3) {
+    text-decoration: underline;
+    font-size: 20px;
+    color: red;
+
+}
+
+ul :nth-child(4) {
+    font-weight: bold;
+}
+
+.classP {
+    background-color: green
+}
+
+#liste :first-child, :last-child {
+    font-weight: bold;
+}
+
+li::marker {
+    content: "X ";
+    color: black
+}
+
+ul :first-child::first-letter {
+    font-weight: bold;
+}
+
+input[type="email"] {
+    border: red, solid;
+}
