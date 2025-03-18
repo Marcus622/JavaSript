@@ -1,0 +1,36 @@
+/* :root, body, html, * ändern alle die Hintergrundfarbe
+Welcher Selektor macht was?
+body  --> Wählt das HTML-Tag "body" 
+html  --> Wählt das HTML-Tag "html"
+:root --> Wählt das HTML-Tag das alle anderen Umschließt (Die "Wurzel")
+*     --> "Universal-Selektor" - Wählt ALLE Html Tags aus
+*/
+:root {
+    background-color: beige;
+}
+
+/*Alle h1 UND alle p*/
+h1, p {
+    color: darkblue;
+}
+
+/*Alle p Elemente in allen Elementen mit Klasse "classP"*/
+.classP p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Elemente mit einer individuellen ID*/
+#idForP {
+    color: darkred;
+}
+
+/*Alle "p"-Tags mit einer Klasse "classP"*/
+p.classP {
+    background-color:aliceblue;
+}
+
+
+ul :nth-child(2n) {
+    font-size: 16px;
+    color: darkmagenta;
+}

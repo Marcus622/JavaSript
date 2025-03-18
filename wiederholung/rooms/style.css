@@ -1,0 +1,57 @@
+.myfirstElements {
+    color: red;
+}
+h3 {
+    font-style: italic;
+    color:blue;
+}
+div > ul {
+    background-color: yellow;
+    
+}
+
+div ul li {
+    border: solid 4px blue;
+}
+
+
+div span {
+    background-color: black;
+    color: white;
+}
+
+div + p {
+    background-color: red;
+}
+/* Der Unterschied zwischen dem Child Combinator (>) und dem Descendant Combinator (Leerzeichen) liegt darin, wie die Beziehung zwischen den Elementen
+/* in einer Hierarchie definiert wird.
+/* Der CC(>) selektiert nur direkte Kinder eines bestimmten Elternelements. Bsp: div > p {} wendet die Stile nur auf <p> Elemente an, die dierekte Kinder eines div sind.
+/*DC Wendet die Stile auf alle <p> Elemente an, die irgendwo innerhalb eines <div> vorkommen.*/
+
+a:link {
+    color: rgb(54, 154, 54);
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: violet
+}
+
+div {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+div:hover {
+    background-color: yellow;
+    color: black;
+}
+
